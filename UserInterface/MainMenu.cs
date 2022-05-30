@@ -199,5 +199,11 @@ namespace LLWS
         {
             Application.Exit();
         }
+
+        private void btnInfoUtilisateur_Click(object sender, EventArgs e)
+        {
+            OpenActiveForm(new UserInterface.infoUtilisateur.infoUtilisateur(), sender);
+
+        }
     }
 }

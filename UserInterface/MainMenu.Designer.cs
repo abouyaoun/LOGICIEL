@@ -45,6 +45,7 @@ namespace LLWS
             this.panelWindowTitle = new System.Windows.Forms.Panel();
             this.labelWindowTitle = new System.Windows.Forms.Label();
             this.panelMainWindow = new System.Windows.Forms.Panel();
+            this.btnInfoUtilisateur = new System.Windows.Forms.Button();
             this.pnlSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelWindowTitle.SuspendLayout();
@@ -53,6 +54,7 @@ namespace LLWS
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
+            this.pnlSidebar.Controls.Add(this.btnInfoUtilisateur);
             this.pnlSidebar.Controls.Add(this.lblMenuAdmin);
             this.pnlSidebar.Controls.Add(this.btnManageCotations);
             this.pnlSidebar.Controls.Add(this.btnMesMouvements);
@@ -74,10 +76,10 @@ namespace LLWS
             this.lblMenuAdmin.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblMenuAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuAdmin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMenuAdmin.Location = new System.Drawing.Point(0, 687);
+            this.lblMenuAdmin.Location = new System.Drawing.Point(0, 680);
             this.lblMenuAdmin.Name = "lblMenuAdmin";
             this.lblMenuAdmin.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.lblMenuAdmin.Size = new System.Drawing.Size(191, 21);
+            this.lblMenuAdmin.Size = new System.Drawing.Size(232, 28);
             this.lblMenuAdmin.TabIndex = 11;
             this.lblMenuAdmin.Text = "Menu administrateur";
             // 
@@ -161,7 +163,7 @@ namespace LLWS
             this.lblUserBudget.Location = new System.Drawing.Point(8, 47);
             this.lblUserBudget.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserBudget.Name = "lblUserBudget";
-            this.lblUserBudget.Size = new System.Drawing.Size(50, 19);
+            this.lblUserBudget.Size = new System.Drawing.Size(59, 23);
             this.lblUserBudget.TabIndex = 8;
             this.lblUserBudget.Text = "label1";
             // 
@@ -173,7 +175,7 @@ namespace LLWS
             this.lblMyBudget.Location = new System.Drawing.Point(4, 11);
             this.lblMyBudget.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMyBudget.Name = "lblMyBudget";
-            this.lblMyBudget.Size = new System.Drawing.Size(86, 19);
+            this.lblMyBudget.Size = new System.Drawing.Size(105, 23);
             this.lblMyBudget.TabIndex = 7;
             this.lblMyBudget.Text = "Mon budget";
             // 
@@ -268,7 +270,7 @@ namespace LLWS
             this.labelWindowTitle.Location = new System.Drawing.Point(769, 25);
             this.labelWindowTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWindowTitle.Name = "labelWindowTitle";
-            this.labelWindowTitle.Size = new System.Drawing.Size(0, 30);
+            this.labelWindowTitle.Size = new System.Drawing.Size(0, 37);
             this.labelWindowTitle.TabIndex = 0;
             // 
             // panelMainWindow
@@ -280,6 +282,25 @@ namespace LLWS
             this.panelMainWindow.Name = "panelMainWindow";
             this.panelMainWindow.Size = new System.Drawing.Size(1661, 953);
             this.panelMainWindow.TabIndex = 2;
+            // 
+            // btnInfoUtilisateur
+            // 
+            this.btnInfoUtilisateur.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInfoUtilisateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfoUtilisateur.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnInfoUtilisateur.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnInfoUtilisateur.Image = global::LLWS.Properties.Resources.user;
+            this.btnInfoUtilisateur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfoUtilisateur.Location = new System.Drawing.Point(0, 299);
+            this.btnInfoUtilisateur.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInfoUtilisateur.Name = "btnInfoUtilisateur";
+            this.btnInfoUtilisateur.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnInfoUtilisateur.Size = new System.Drawing.Size(263, 66);
+            this.btnInfoUtilisateur.TabIndex = 12;
+            this.btnInfoUtilisateur.Text = "   Informations";
+            this.btnInfoUtilisateur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnInfoUtilisateur.UseVisualStyleBackColor = true;
+            this.btnInfoUtilisateur.Click += new System.EventHandler(this.btnInfoUtilisateur_Click);
             // 
             // MainMenu
             // 
@@ -323,6 +344,7 @@ namespace LLWS
         private System.Windows.Forms.Button btnManageUser;
         private System.Windows.Forms.Button btnManageCotations;
         private System.Windows.Forms.Label lblMenuAdmin;
+        private System.Windows.Forms.Button btnInfoUtilisateur;
     }
 }
 

@@ -135,6 +135,12 @@
     <Compile Include="UserInterface\Connexion\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInterface\infoUtilisateur\infoUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\infoUtilisateur\infoUtilisateur.Designer.cs">
+      <DependentUpon>infoUtilisateur.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInterface\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </Compile>
     <EmbeddedResource Include="UserInterface\Connexion\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\infoUtilisateur\infoUtilisateur.resx">
+      <DependentUpon>infoUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
